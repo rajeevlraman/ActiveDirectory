@@ -37,3 +37,6 @@
 - Restart the PC once installation is complete; login screen displays domain name.
 - Login to the newly created domain, not the local PC.
 - Server Manager shows AD DS server group running.
+- Now its a good practice to create a local Admin other than the built in Administrator.
+- You can create this Admin and contain user in a Organizational unit.
+- You can view the process in detail here ` link to readme.md`
