@@ -5,7 +5,14 @@
 - Configure VM with minimum requirements due to limited resources.
 - Set up two NICs:
   - One with NAT for external access.
-  - Another with Host-only adapter for host-only access.
+ 
+<img align="center" src="assets/images/Picture16.png" /><br>
+
+- Another with Host-only adapter for host-only access.
+
+<img align="center" src="assets/images/Picture6.png" /><br>
+
+  
 - VM traffic is routed through a pfSense firewall.
 - Start the VM and follow standard Windows installation instructions.
 - Choose "Windows Server 2022 Datacenter Evaluation (Desktop Experience)" for lab.
