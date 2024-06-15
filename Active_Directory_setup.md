@@ -40,3 +40,8 @@
 - Now its a good practice to create a local Admin other than the built in Administrator.
 - You can create this Admin and contain user in a Organizational unit.
 - You can view the process in detail here https://github.com/rajeevlraman/ActiveDirectory/blob/main/README.md
+- After creating the user you can login with the new Admin.
+- Now that we have the Active Directory setup, the DNS `DOMAIN NAME SYSTEM ` service is automatically configured.
+- AD DS relies heavily on DNS for name resolution within the domain.
+- DNS facilitates locating other domain controllers, domain-joined computers, and other domain resources.
+- Of course it can be tweaked according to requirements, but the integration of these services ensures the seamless functioning.
