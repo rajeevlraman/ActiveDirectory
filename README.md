@@ -102,15 +102,39 @@ https://www.toptal.com/designers/htmlarrows/symbols/script-capital-r/
    - Hash Algorith for signing Certificates we choose ` SHA 256 `
    - 
 
-<img align="center" src="assets/images/Picture54.png" /><br>
+<img align="center" src="assets/images/Picture61.png" /><br>
 
-<img align="center" src="assets/images/Picture54.png" /><br>
+   - We need to Specify the Name of the CA
+   - I chose to add DOmain name - pcname -CA so ` DASHERSWINLAB-DASHERLAB-AD-CA `
+   - i choose the defaults provided in the Distinguished name.
+
+<img align="center" src="assets/images/Picture62.png" /><br>
+
+   - For Validity period i just chose 99 years.
+
+<img align="center" src="assets/images/Picture63.png" /><br>
+
+- Choose the Database Locations. i chose he default.
+
+<img align="center" src="assets/images/Picture64.png" /><br>
+
+- review and confirm the configuration values and click on configure button.
+
+<img align="center" src="assets/images/Picture66.png" /><br>
+
+the configurationo will be confirmed and you can view the detials by clicking on the link provided.
+
+<img align="center" src="assets/images/Picture67.png" /><br>
+
+
+
 
 ## 2. Creating an Organizational Unit (OU):<br>
 
 1. **Open Active Directory Users and Computers**:
    - Go to **Start Menu** → **Administrative Tools** → **Active Directory Users and Computers**.
 
+<img align="center" src="assets/images/Picture68.png" /><br>
 
 2. **Navigate to the Domain**:
    - Expand the domain node where you want to create the OU (e.g., `AD.DASHERSWINLAB.local`).
