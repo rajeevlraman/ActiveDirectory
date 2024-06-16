@@ -5,28 +5,62 @@
 <!--
 CA roles and features
 -->
-
 ## We need to Add Certificate Authority (CA) Roles in Active Directory.<br>
-The CA roles are needed to satisfy nad perform various functions in the domain.<br>
+The CA roles are needed to satisfy and perform various functions in the domain.<br>
 The following are when we need the CA roles:
+<table>  
+ <td>
 
-1. **Issuing Certificates:**
+ ***Issuing Certificates:***
    - CA roles are needed to issue digital certificates for users, computers, devices, and services within your domain or organization.
+ 
+ </td> 
+ </table>
 
-2. **PKI (Public Key Infrastructure) Deployment:**
+ <table>  
+ <td>
+    
+***PKI (Public Key Infrastructure) Deployment:***
    - Deploying a PKI infrastructure requires CA roles to manage certificates centrally, including issuance, management, and revocation.
+ 
+ </td> 
+ </table>
 
-3. **Secure Authentication:**
+<table>  
+ <td>
+    
+***Secure Authentication:***
    - Enable secure authentication mechanisms like smart card logon, VPN authentication, and wireless network authentication, which rely on certificates.
+ 
+ </td> 
+ </table>
 
-4. **Compliance and Regulatory Requirements:**
+<table>  
+ <td>
+    
+ ***Compliance and Regulatory Requirements:***
    - Ensure compliance with regulations (e.g., GDPR, HIPAA) that mandate certificate use for encryption and data protection.
+ 
+ </td> 
+ </table>
 
-5. **Internal Application Requirements:**
+ <table>  
+ <td>
+    
+ ***Internal Application Requirements:***
    - Some applications or services require certificates for secure communication or encryption, facilitated by CA roles.
+ 
+ </td> 
+ </table>
 
-6. **Trust and Authorization:**
+<table>  
+ <td> 
+    
+***Trust and Authorization:***
    - Establish trust relationships within your organization and with external entities using certificates issued by a trusted CA.
+ 
+ </td> 
+ </table>
 
 ### Summary
 
