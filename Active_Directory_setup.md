@@ -95,39 +95,39 @@
   - Choose "Add a new Forest".
   - Provide a domain name.
 
-  <img align="center" src="assets/images/Picture36.png" /><br>
+<img align="center" src="assets/images/Picture36.png" /><br>
 
   - Configure optional restore password.
 
-  <img align="center" src="assets/images/Picture37.png" /><br>
+<img align="center" src="assets/images/Picture37.png" /><br>
 
   - Leave DNS options at default. It will be installed.
  
- <img align="center" src="assets/images/Picture38.png" /><br>
+<img align="center" src="assets/images/Picture38.png" /><br>
 
   - NetBIOS domain name is auto-populated from forest name.
 
- <img align="center" src="assets/images/Picture39.png" /><br>
- <img align="center" src="assets/images/Picture40.png" /><br>
+<img align="center" src="assets/images/Picture39.png" /><br>
+<img align="center" src="assets/images/Picture40.png" /><br>
 
   - Directory paths can be left as default.
     
-  <img align="center" src="assets/images/Picture41.png" /><br>
-  <img align="center" src="assets/images/Picture42.png" /><br>
+<img align="center" src="assets/images/Picture41.png" /><br>
+<img align="center" src="assets/images/Picture42.png" /><br>
 
   - Review changes; opt for manual installation (not PowerShell script).
 
-  <img align="center" src="assets/images/Picture44.png" /><br>
+<img align="center" src="assets/images/Picture44.png" /><br>
 
   - Click "Next" and proceed with prerequisite checks (ignore if needed).
   
-  <img align="center" src="assets/images/Picture45.png" /><br>
+<img align="center" src="assets/images/Picture45.png" /><br>
 
   - Click "Install" to begin installation.
 - Restart the PC once installation is complete.
 - The login screen now displays domain name followed by Administrator as `DASHERSWINLAB\Administrator`.
 
-  <img align="center" src="assets/images/Picture46.png" /><br>
+<img align="center" src="assets/images/Picture46.png" /><br>
 
 - Enter the Domain Administrator password and not the local Administrator password
 - This will then Log you in to the newly created domain, not the local PC.
@@ -135,15 +135,15 @@
 - For now lets log in to the Domain.
 - Server Manager shows AD DS server group running.
 
-  <img align="center" src="assets/images/Picture47.png" /><br>
-
 - you can see the Server manager displays the newly added ` AD DS ` and ` DNS services `.
 
-- Now its a good practice to create a local Admin other than the built in Administrator.
-- You can create this Admin and contain user in a Organizational unit.
-- You can view the process in detail here https://github.com/rajeevlraman/ActiveDirectory/blob/main/README.md
-- After creating the user you can login with the new Admin.
+<img align="center" src="assets/images/Picture47.png" /><br>
+
 - Now that we have the Active Directory setup, the DNS `DOMAIN NAME SYSTEM ` service is automatically configured.
 - AD DS relies heavily on DNS for name resolution within the domain.
 - DNS facilitates locating other domain controllers, domain-joined computers, and other domain resources.
 - Of course it can be tweaked according to requirements, but the integration of these services ensures the seamless functioning.
+-Now its a good practice to create a  `local Admin ` other than the built in Administrator.
+- You can create this Admin and contain user in a ` Organizational unit `.
+- You can view the process in detail here https://github.com/rajeevlraman/ActiveDirectory/blob/main/README.md
+- After creating the user you can login with the new Administrator credentials.
