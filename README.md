@@ -1,257 +1,149 @@
-# ActiveDirectory
-<br> We wil see how to add a CA ` CERTIFICATE AUTHORITY ` role and a Local Admin group with a Admin user
-## 1. Enabling Certificate Authority CA in Active Directory<br>
+# ACTIVE DIRECTORY SETUP ON WINDOWS SERVER 2022
 
-<!--
-CA roles and features
--->
-## We need to Add Certificate Authority (CA) Roles in Active Directory.<br>
-The CA roles are needed to satisfy and perform various functions in the domain.<br>
-The following are when we need the CA roles:
-<table>  
- <td>
 
- ***Issuing Certificates:***
-   - CA roles are needed to issue digital certificates for users, computers, devices, and services within your domain or organization.
+- Create a Windows Server 2022 VM in VirtualBox.
+- Configure VM with minimum requirements due to limited resources.
+- Set up two NICs:
+  - One with NAT for external access.
  
- </td> 
- </table>
+<img align="center" src="assets/images/Picture8.png" /><br>
 
- <table>  
- <td>
-    
-***PKI (Public Key Infrastructure) Deployment:***
-   - Deploying a PKI infrastructure requires CA roles to manage certificates centrally, including issuance, management, and revocation.
+- Another with Host-only adapter for host-only access.
+
+<img align="center" src="assets/images/Picture9.png" /><br>
+
+  
+- VM traffic is routed through a pfSense firewall.
+- Start the VM and follow standard Windows installation instructions.
+
+<img align="center" src="assets/images/Picture10.png" /><br>
+
+<img align="center" src="assets/images/Picture11.png" /><br>
+
+- Choose "Windows Server 2022 Datacenter Evaluation (Desktop Experience)" for lab.
+
+<img align="center" src="assets/images/Picture12.png" /><br>
+
+<img align="center" src="assets/images/Picture13.png" /><br>
+
+<img align="center" src="assets/images/Picture14.png" /><br>
+
+- Complete installation, set password for built-in admin when prompted.
+
+<img align="center" src="assets/images/Picture15.png" /><br>
+
+- Press ` CTRL + ALT + DEL ` to login to the server.
+
+<img align="center" src="assets/images/Picture16.png" /><br>
+
+- Login using username `Administrator` and the provided password.
+
+<img align="center" src="assets/images/Picture17.png" /><br>
+
+- Server Manager starts automatically on startup.
+
+<img align="center" src="assets/images/Picture20.png" /><br>
+
+- In Server Manager the default services are visible.
+
+<img align="center" src="assets/images/Picture21.png" /><br>
+
+- Rename the PC to a sensible name (e.g., `DASHERSLAB AD`).
+
+<img align="center" src="assets/images/Picture22.png" /><br>
+
+- Restart the PC after renaming.
+- Begin installing Active Directory services:
+
+<img align="center" src="assets/images/Picture23.png" /><br>
+
+  - Click on "Roles and Features".
+  - Select installation type as "Roles and Features".
+
+<img align="center" src="assets/images/Picture23.png" /><br>
+
+  - Select the server displayed (if only one).
+
+<img align="center" src="assets/images/Picture73.png" /><br>
+
+  - Choose "Active Directory Domain Services" as the server role.
+  - Click "Add Features" and then "Next".
+
+<img align="center" src="assets/images/Picture26.png" /><br>
+
+<img align="center" src="assets/images/Picture27.png" /><br>
+
+<img align="center" src="assets/images/Picture28.png" /><br>
+
+  - Check "Restart if required" on the confirmation screen.
+
+<img align="center" src="assets/images/Picture29.png" /><br>
+
+<img align="center" src="assets/images/Picture30.png" /><br>
+
+  - Click "Install" to install the role.
+
+<img align="center" src="assets/images/Picture31.png" /><br>
+
+<img align="center" src="assets/images/Picture32.png" /><br>
+
+- After installation, a notification prompts for post-deployment configuration to promote this server to a Domain Controller.
+
+<img align="center" src="assets/images/Picture34.png" /><br>
+
+- Start the deployment configuration wizard:
+  - Choose "Add a new Forest".
+  - Provide a domain name.
+
+<img align="center" src="assets/images/Picture36.png" /><br>
+
+  - Configure optional restore password.
+
+<img align="center" src="assets/images/Picture37.png" /><br>
+
+  - Leave DNS options at default. It will be installed.
  
- </td> 
- </table>
+<img align="center" src="assets/images/Picture38.png" /><br>
 
-<table>  
- <td>
+  - NetBIOS domain name is auto-populated from forest name.
+
+<img align="center" src="assets/images/Picture39.png" /><br>
+<img align="center" src="assets/images/Picture40.png" /><br>
+
+  - Directory paths can be left as default.
     
-***Secure Authentication:***
-   - Enable secure authentication mechanisms like smart card logon, VPN authentication, and wireless network authentication, which rely on certificates.
- 
- </td> 
- </table>
+<img align="center" src="assets/images/Picture41.png" /><br>
+<img align="center" src="assets/images/Picture42.png" /><br>
 
-<table>  
- <td>
-    
- ***Compliance and Regulatory Requirements:***
-   - Ensure compliance with regulations (e.g., GDPR, HIPAA) that mandate certificate use for encryption and data protection.
- 
- </td> 
- </table>
+  - Review changes; opt for manual installation (not PowerShell script).
 
- <table>  
- <td>
-    
- ***Internal Application Requirements:***
-   - Some applications or services require certificates for secure communication or encryption, facilitated by CA roles.
- 
- </td> 
- </table>
+<img align="center" src="assets/images/Picture44.png" /><br>
 
-<table>  
- <td> 
-    
-***Trust and Authorization:***
-   - Establish trust relationships within your organization and with external entities using certificates issued by a trusted CA.
- 
- </td> 
- </table>
+  - Click "Next" and proceed with prerequisite checks (ignore if needed).
+  
+<img align="center" src="assets/images/Picture45.png" /><br>
 
-### Summary
+  - Click "Install" to begin installation.
+- Restart the PC once installation is complete.
+- The login screen now displays domain name followed by Administrator as `DASHERSWINLAB\Administrator`.
 
-Adding Certificate Authority (CA) roles in Active Directory is crucial for establishing a secure, centralized infrastructure to issue and manage digital certificates. This supports secure communications, authentication mechanisms, regulatory compliance, application requirements, and trust relationships.
+<img align="center" src="assets/images/Picture46.png" /><br>
 
+- Enter the Domain Administrator password and not the local Administrator password
+- This will then Log you in to the newly created domain, not the local PC.
+- If you want to log int to the local Pc then you can choose the other user.
+- For now lets log in to the Domain.
+- Server Manager shows AD DS server group running.
 
-<!-- end CA role -->
+- you can see the Server manager displays the newly added ` AD DS ` and ` DNS services `.
 
-## Now lets see how we can add the CA services.
+<img align="center" src="assets/images/Picture47.png" /><br>
 
-- On the service manager dashboard click on Roles and Features.
-- select the roles and feature option.
-- since I have only one domain it will be displayed so select it.
-- In the Server Roles select &#x2611; Active Directory Certificate Services
-
-<img align="center" src="assets/images/Picture48.png" /><br> 
-<!-- to add check box
-- [ ] Task 1
-- [x] Task 2 (completed)
-- [ ] Task 3
-- Another example: Complete the task &#x2611; by Friday.
-&cross;
-&#x2610;
-&check;
-&#x2612;
-https://www.toptal.com/designers/htmlarrows/symbols/script-capital-r/
--->
-
-- Click Next till you reach the Role Services and then  &#x2611; Certification Authority
-
-<img align="center" src="assets/images/Picture50.png" /><br>
-
-- Click next and check &#x2611; the restart Automatically if required check box
-- click yes on the popup message confirmaing auto restart.
-
-<img align="center" src="assets/images/Picture51.png" /><br>
-
-- click on the install button and complete the installation.
-- In the results you can see it mentions ` configuration required`
-
-<img align="center" src="assets/images/Picture52.png" /><br>
-
-- In the notification area click on the Configure Active Directory Certificate Services.
-
-<img align="center" src="assets/images/Picture54.png" /><br>
-
-- The Configuration wizard for CA services Starts.
-- We need to Specify credentials to configure the CA role services.
-- The Domain Administrator is entered in the Credentials textbox ` DASHERSWINLAB\Administrator `
-
-
-<img align="center" src="assets/images/Picture56.png" /><br>
-
-- In the Select Roles and Services check &#x2611; Certification Authoritry
-
-<img align="center" src="assets/images/Picture57.png" /><br>
-
-- In the Setup type we choose the option Enterprise CA
-
-<img align="center" src="assets/images/Picture58.png" /><br>
-
-- In the CA Type we can choos the Root CA option
-
-<img align="center" src="assets/images/Picture59.png" /><br>
-
-- For the Private Key specification we choose the option Create a New private Key.
-
-<img align="center" src="assets/images/Picture60.png" /><br>
-
-   - for the Private key we need to set the Encryption parametres.
-   - Cryptographic provider we choose `RSA#Microsoft Software Key Storage Provider`
-   - Key Length ` 2048 `
-   - Hash Algorith for signing Certificates we choose ` SHA 256 `
-   - 
-
-<img align="center" src="assets/images/Picture61.png" /><br>
-
-   - We need to Specify the Name of the CA
-   - I chose to add DOmain name - pcname -CA so ` DASHERSWINLAB-DASHERLAB-AD-CA `
-   - i choose the defaults provided in the Distinguished name.
-
-<img align="center" src="assets/images/Picture62.png" /><br>
-
-   - For Validity period i just chose 99 years.
-
-<img align="center" src="assets/images/Picture63.png" /><br>
-
-- Choose the Database Locations. i chose he default.
-
-<img align="center" src="assets/images/Picture64.png" /><br>
-
-- review and confirm the configuration values and click on configure button.
-
-<img align="center" src="assets/images/Picture66.png" /><br>
-
-the configurationo will be confirmed and you can view the detials by clicking on the link provided.
-
-<img align="center" src="assets/images/Picture67.png" /><br>
-
-
-
-
-# 2. Creating an Organizational Unit (OU):<br>
-
-1. **Open Active Directory Users and Computers**:
-   - Go to **Start Menu** → **Administrative Tools** → **Active Directory Users and Computers**.
-
-2. **Navigate to the Domain**:
-   - Expand the domain node where you want to create the OU (e.g., `AD.DASHERSWINLAB.local`).
-
-3. **Create the OU**:
-   - Right-click on the domain or an existing OU where you want to create the new OU.
-   - Select **New** → **Organizational Unit**.
-   - Name the new OU following a clear naming convention. For example, if creating an OU for Admin Users, you might name it `AdminUsers`. i have named it `LabAdmins`.
-
-<img align="center" src="assets/images_OU/Picture3.png" /><br>
-
-4. **Set Permissions (Optional)**:
-   - Right-click on the new OU (`LabAdmins`) → **Properties**.
-   - Go to the **Security** tab to set permissions for who can manage objects within this OU.
-   - I'll leave it empty.
-
-### Creating an Admin User in the OU:
-
-<img align="center" src="assets/images_OU/Picture5.png" /><br>
-
-1. **Create the User Account**:
-   - Right-click on the newly created OU (`LabAdmins`) or any other suitable OU.
-   - Select **New** → **User**.
-
-2. **Fill Out User Details**:
-   - Enter the user's details, including:
-     - First name, last name, and username (e.g., `admin_user`).
-     - Password (choose a secure password).
-     - Ensure the **User must change password at next logon** is unchecked if setting initial password.
-    
-<img align="center" src="assets/images_OU/Picture6.png" /><br>
-
-<img align="center" src="assets/images_OU/Picture7.png" /><br>
-
-<img align="center" src="assets/images_OU/Picture8.png" /><br>
-
-3. **Assign User to Groups** (Optional):
-   - On the **Member Of** tab, add the user to appropriate groups like `Domain Admins`, `Administrators`, or other relevant groups based on administrative roles.
-
-<img align="center" src="assets/images_OU/Picture9.png" /><br>
-
-<img align="center" src="assets/images_OU/Picture10.png" /><br>
-
-<img align="center" src="assets/images_OU/Picture11.png" /><br>
-
-4. **Configure User Properties**:
-   - Customize settings in other tabs as needed, such as **Account**, **Profile**, **Telephones**, etc.
-
-5. **Finish**:
-   - Click **OK** to create the user.
-
-### Naming Conventions:
-
-- **OU Naming Convention**: Choose a clear and descriptive name that reflects the purpose of the OU, such as `AdminUsers` for administrative users or `SalesUsers` for sales department users.
-- **User Naming Convention**: Typically, usernames should follow a standard format for consistency and clarity. For example, `firstname.lastname` or `firstinitial.lastname` (`bruce.banner` or `bbanner`). I'll stick with my convention 'FirstnameLastname' (example the user: `Bruce Banner` email has `brucebanner@`.
-
-### Example:
-
-- **OU Name**: `LabAdmin`
-- **First name: `Bruce`
-- Last name: `Banner`
-- **User Name**: `brucebanner`
-
-
-- Restart the PC and on the login page you should have Other User option. select it.
-
-<img align="center" src="assets/images_OU/Picture13.png" /><br>
-
-- Enter the New Administrator credentials and sign in to the Domain.
-- Use the format Domainname\username ` AD\brucebanner`
-- Since we had checked the box saying password must be changed on first login, it should prompt us for change.
-
-<img align="center" src="assets/images_OU/Picture14.png" /><br>
-
-- Click om OK and enter the current password followed by the new password.
-- It will confirm the password chang. Click ok and it should log you in.
-
-<img align="center" src="assets/images_OU/Picture15.png" /><br>
-
-<img align="center" src="assets/images_OU/Picture16.png" /><br>
-
-- confirm the login account
-
-<img align="center" src="assets/images_OU/Picture17.png" /><br>
-
-It is always a better practice to use a normal user or Admin other than the built in Admins.
-
-
+- Now that we have the Active Directory setup, the DNS `DOMAIN NAME SYSTEM ` service is automatically configured.
+- AD DS relies heavily on DNS for name resolution within the domain.
+- DNS facilitates locating other domain controllers, domain-joined computers, and other domain resources.
+- Of course it can be tweaked according to requirements, but the integration of these services ensures the seamless functioning.
+-Now its a good practice to create a  `local Admin ` other than the built in Administrator.
+- You can create this Admin and contain user in a ` Organizational unit `.
+- You can view the process in detail here https://github.com/rajeevlraman/ActiveDirectory/blob/main/README.md
+- After creating the user you can login with the new Administrator credentials.
