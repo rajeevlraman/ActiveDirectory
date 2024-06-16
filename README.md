@@ -171,12 +171,12 @@ the configurationo will be confirmed and you can view the detials by clicking on
 2. **Navigate to the Domain**:
    - Expand the domain node where you want to create the OU (e.g., `AD.DASHERSWINLAB.local`).
 
-<img align="center" src="assets/images/Picture68.png" /><br>
-
 3. **Create the OU**:
    - Right-click on the domain or an existing OU where you want to create the new OU.
    - Select **New** → **Organizational Unit**.
    - Name the new OU following a clear naming convention. For example, if creating an OU for Admin Users, you might name it `AdminUsers`. i have named it `LabAdmins`.
+
+<img align="center" src="assets/images_OU/Picture3.png" /><br>
 
 4. **Set Permissions (Optional)**:
    - Right-click on the new OU (`LabAdmins`) → **Properties**.
@@ -184,6 +184,8 @@ the configurationo will be confirmed and you can view the detials by clicking on
    - I'll leave it empty.
 
 ### Creating an Admin User in the OU:
+
+<img align="center" src="assets/images_OU/Picture5.png" /><br>
 
 1. **Create the User Account**:
    - Right-click on the newly created OU (`LabAdmins`) or any other suitable OU.
@@ -194,9 +196,21 @@ the configurationo will be confirmed and you can view the detials by clicking on
      - First name, last name, and username (e.g., `admin_user`).
      - Password (choose a secure password).
      - Ensure the **User must change password at next logon** is unchecked if setting initial password.
+    
+<img align="center" src="assets/images_OU/Picture6.png" /><br>
+
+<img align="center" src="assets/images_OU/Picture7.png" /><br>
+
+<img align="center" src="assets/images_OU/Picture8.png" /><br>
 
 3. **Assign User to Groups** (Optional):
    - On the **Member Of** tab, add the user to appropriate groups like `Domain Admins`, `Administrators`, or other relevant groups based on administrative roles.
+
+<img align="center" src="assets/images_OU/Picture9.png" /><br>
+
+<img align="center" src="assets/images_OU/Picture10.png" /><br>
+
+<img align="center" src="assets/images_OU/Picture11.png" /><br>
 
 4. **Configure User Properties**:
    - Customize settings in other tabs as needed, such as **Account**, **Profile**, **Telephones**, etc.
@@ -215,3 +229,29 @@ the configurationo will be confirmed and you can view the detials by clicking on
 - **First name: `Bruce`
 - Last name: `Banner`
 - **User Name**: `brucebanner`
+
+
+- Restart the PC and on the login page you should have Other User option. select it.
+
+<img align="center" src="assets/images_OU/Picture13.png" /><br>
+
+- Enter the New Administrator credentials and sign in to the Domain.
+- Use the format Domainname\username ` AD\brucebanner`
+- Since we had checked the box saying password must be changed on first login, it should prompt us for change.
+
+<img align="center" src="assets/images_OU/Picture14.png" /><br>
+
+- Click om OK and enter the current password followed by the new password.
+- It will confirm the password chang. Click ok and it should log you in.
+
+<img align="center" src="assets/images_OU/Picture15.png" /><br>
+
+<img align="center" src="assets/images_OU/Picture16.png" /><br>
+
+- confirm the login account
+
+<img align="center" src="assets/images_OU/Picture17.png" /><br>
+
+It is always a better practice to use a normal user or Admin other than the built in Admins.
+
+
