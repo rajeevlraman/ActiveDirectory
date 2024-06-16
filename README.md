@@ -42,6 +42,7 @@ Adding Certificate Authority (CA) roles in Active Directory is crucial for estab
 - since I have only one domain it will be displayed so select it.
 - In the Server Roles select &#x2611; Active Directory Certificate Services
 
+<img align="center" src="assets/images/Picture48.png" /><br> 
 <!-- to add check box
 - [ ] Task 1
 - [x] Task 2 (completed)
@@ -56,6 +57,54 @@ https://www.toptal.com/designers/htmlarrows/symbols/script-capital-r/
 
 - Click Next till you reach the Role Services and then  &#x2611; Certification Authority
 
+<img align="center" src="assets/images/Picture50.png" /><br>
+
+- Click next and check &#x2611; the restart Automatically if required check box
+- click yes on the popup message confirmaing auto restart.
+
+<img align="center" src="assets/images/Picture51.png" /><br>
+
+- click on the install button and complete the installation.
+- In the results you can see it mentions ` configuration required`
+
+<img align="center" src="assets/images/Picture52.png" /><br>
+
+- In the notification area click on the Configure Active Directory Certificate Services.
+
+<img align="center" src="assets/images/Picture54.png" /><br>
+
+- The Configuration wizard for CA services Starts.
+- We need to Specify credentials to configure the CA role services.
+- The Domain Administrator is entered in the Credentials textbox ` DASHERSWINLAB\Administrator `
+
+
+<img align="center" src="assets/images/Picture56.png" /><br>
+
+- In the Select Roles and Services check &#x2611; Certification Authoritry
+
+<img align="center" src="assets/images/Picture57.png" /><br>
+
+- In the Setup type we choose the option Enterprise CA
+
+<img align="center" src="assets/images/Picture58.png" /><br>
+
+- In the CA Type we can choos the Root CA option
+
+<img align="center" src="assets/images/Picture59.png" /><br>
+
+- For the Private Key specification we choose the option Create a New private Key.
+
+<img align="center" src="assets/images/Picture60.png" /><br>
+
+   - for the Private key we need to set the Encryption parametres.
+   - Cryptographic provider we choose `RSA#Microsoft Software Key Storage Provider`
+   - Key Length ` 2048 `
+   - Hash Algorith for signing Certificates we choose ` SHA 256 `
+   - 
+
+<img align="center" src="assets/images/Picture54.png" /><br>
+
+<img align="center" src="assets/images/Picture54.png" /><br>
 
 ## 2. Creating an Organizational Unit (OU):<br>
 
