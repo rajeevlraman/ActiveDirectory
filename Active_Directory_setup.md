@@ -69,16 +69,34 @@
   - Choose "Active Directory Domain Services" as the server role.
   - Click "Add Features" and then "Next".
 
-<img align="center" src="assets/images/Picture29a.png" /><br>
+<img align="center" src="assets/images/Picture26.png" /><br>
 
-<img align="center" src="assets/images/Picture29b.png" /><br>
+<img align="center" src="assets/images/Picture27.png" /><br>
+
+<img align="center" src="assets/images/Picture28.png" /><br>
 
   - Check "Restart if required" on the confirmation screen.
+
+<img align="center" src="assets/images/Picture29.png" /><br>
+
+<img align="center" src="assets/images/Picture30.png" /><br>
+
   - Click "Install" to install the role.
+
+<img align="center" src="assets/images/Picture31.png" /><br>
+
+<img align="center" src="assets/images/Picture32.png" /><br>
+
 - After installation, a notification prompts for post-deployment configuration to promote this server to a Domain Controller.
+
+<img align="center" src="assets/images/Picture34.png" /><br>
+
 - Start the deployment configuration wizard:
   - Choose "Add a new Forest".
   - Provide a domain name.
+
+  <img align="center" src="assets/images/Picture36.png" /><br>
+
   - Configure optional restore password.
   - Leave DNS options at default.
   - NetBIOS domain name is auto-populated from forest name.
