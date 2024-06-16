@@ -1,8 +1,67 @@
 # ActiveDirectory
-### Creating an Organizational Unit (OU):
+<br> We wil see how to add a CA ` CERTIFICATE AUTHORITY ` role and a Local Admin group with a Admin user
+## 1. Enabling Certificate Authority CA in Active Directory<br>
+
+<!--
+CA roles and features
+-->
+
+## We need to Add Certificate Authority (CA) Roles in Active Directory.<br>
+The CA roles are needed to satisfy nad perform various functions in the domain.<br>
+The following are when we need the CA roles:
+
+1. **Issuing Certificates:**
+   - CA roles are needed to issue digital certificates for users, computers, devices, and services within your domain or organization.
+
+2. **PKI (Public Key Infrastructure) Deployment:**
+   - Deploying a PKI infrastructure requires CA roles to manage certificates centrally, including issuance, management, and revocation.
+
+3. **Secure Authentication:**
+   - Enable secure authentication mechanisms like smart card logon, VPN authentication, and wireless network authentication, which rely on certificates.
+
+4. **Compliance and Regulatory Requirements:**
+   - Ensure compliance with regulations (e.g., GDPR, HIPAA) that mandate certificate use for encryption and data protection.
+
+5. **Internal Application Requirements:**
+   - Some applications or services require certificates for secure communication or encryption, facilitated by CA roles.
+
+6. **Trust and Authorization:**
+   - Establish trust relationships within your organization and with external entities using certificates issued by a trusted CA.
+
+### Summary
+
+Adding Certificate Authority (CA) roles in Active Directory is crucial for establishing a secure, centralized infrastructure to issue and manage digital certificates. This supports secure communications, authentication mechanisms, regulatory compliance, application requirements, and trust relationships.
+
+
+<!-- end CA role -->
+
+## Now lets see how we can add the CA services.
+
+- On the service manager dashboard click on Roles and Features.
+- select the roles and feature option.
+- since I have only one domain it will be displayed so select it.
+- In the Server Roles select &#x2611; Active Directory Certificate Services
+
+<!-- to add check box
+- [ ] Task 1
+- [x] Task 2 (completed)
+- [ ] Task 3
+- Another example: Complete the task &#x2611; by Friday.
+&cross;
+&#x2610;
+&check;
+&#x2612;
+https://www.toptal.com/designers/htmlarrows/symbols/script-capital-r/
+-->
+
+- Click Next till you reach the Role Services and then  &#x2611; Certification Authority
+
+
+## 2. Creating an Organizational Unit (OU):<br>
 
 1. **Open Active Directory Users and Computers**:
    - Go to **Start Menu** → **Administrative Tools** → **Active Directory Users and Computers**.
+
 
 2. **Navigate to the Domain**:
    - Expand the domain node where you want to create the OU (e.g., `AD.DASHERSWINLAB.local`).
