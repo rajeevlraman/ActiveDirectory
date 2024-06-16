@@ -98,15 +98,47 @@
   <img align="center" src="assets/images/Picture36.png" /><br>
 
   - Configure optional restore password.
-  - Leave DNS options at default.
+
+  <img align="center" src="assets/images/Picture37.png" /><br>
+
+  - Leave DNS options at default. It will be installed.
+ 
+ <img align="center" src="assets/images/Picture38.png" /><br>
+
   - NetBIOS domain name is auto-populated from forest name.
+
+ <img align="center" src="assets/images/Picture39.png" /><br>
+ <img align="center" src="assets/images/Picture40.png" /><br>
+
   - Directory paths can be left as default.
+    
+  <img align="center" src="assets/images/Picture41.png" /><br>
+  <img align="center" src="assets/images/Picture42.png" /><br>
+
   - Review changes; opt for manual installation (not PowerShell script).
+
+  <img align="center" src="assets/images/Picture44.png" /><br>
+
   - Click "Next" and proceed with prerequisite checks (ignore if needed).
+  
+  <img align="center" src="assets/images/Picture45.png" /><br>
+
   - Click "Install" to begin installation.
-- Restart the PC once installation is complete; login screen displays domain name.
-- Login to the newly created domain, not the local PC.
+- Restart the PC once installation is complete.
+- The login screen now displays domain name followed by Administrator as `DASHERSWINLAB\Administrator`.
+
+  <img align="center" src="assets/images/Picture46.png" /><br>
+
+- Enter the Domain Administrator password and not the local Administrator password
+- This will then Log you in to the newly created domain, not the local PC.
+- If you want to log int to the local Pc then you can choose the other user.
+- For now lets log in to the Domain.
 - Server Manager shows AD DS server group running.
+
+  <img align="center" src="assets/images/Picture47.png" /><br>
+
+- you can see the Server manager displays the newly added ` AD DS ` and ` DNS services `.
+
 - Now its a good practice to create a local Admin other than the built in Administrator.
 - You can create this Admin and contain user in a Organizational unit.
 - You can view the process in detail here https://github.com/rajeevlraman/ActiveDirectory/blob/main/README.md
