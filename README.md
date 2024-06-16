@@ -163,15 +163,15 @@ the configurationo will be confirmed and you can view the detials by clicking on
 
 
 
-## 2. Creating an Organizational Unit (OU):<br>
+# 2. Creating an Organizational Unit (OU):<br>
 
 1. **Open Active Directory Users and Computers**:
    - Go to **Start Menu** → **Administrative Tools** → **Active Directory Users and Computers**.
 
-<img align="center" src="assets/images/Picture68.png" /><br>
-
 2. **Navigate to the Domain**:
    - Expand the domain node where you want to create the OU (e.g., `AD.DASHERSWINLAB.local`).
+
+<img align="center" src="assets/images/Picture68.png" /><br>
 
 3. **Create the OU**:
    - Right-click on the domain or an existing OU where you want to create the new OU.
