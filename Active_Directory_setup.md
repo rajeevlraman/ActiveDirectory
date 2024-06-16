@@ -69,7 +69,9 @@
   - Choose "Active Directory Domain Services" as the server role.
   - Click "Add Features" and then "Next".
 
-<img align="center" src="assets/images/Picture31.png" /><br>
+<img align="center" src="assets/images/Picture29a.png" /><br>
+
+<img align="center" src="assets/images/Picture29b.png" /><br>
 
   - Check "Restart if required" on the confirmation screen.
   - Click "Install" to install the role.
