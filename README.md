@@ -230,7 +230,7 @@ Active Directory's hierarchical structure provides scalability, flexibility, and
 - DNS facilitates locating other domain controllers, domain-joined computers, and other domain resources.
 - Of course it can be tweaked according to requirements, but the integration of these services ensures the seamless functioning.
 -Now its a good practice to create a  `local Admin ` other than the built in Administrator.
-- You can create this Admin and contain user in a ` Organizational unit `.
+- You can create this Admin user and put the user in an ` Organizational unit `.
 - You can view the process in detail this link [Create An Organizational Unit]( https://github.com/rajeevlraman/ActiveDirectory/blob/main/ad_ou.md#OU)
 - You acan also view the creation of CA Certification Authority here [Create An CA - Certification Authority]( https://github.com/rajeevlraman/ActiveDirectory/blob/main/ad_ou.md)
 - After creating the user you can login with the new Administrator credentials.
