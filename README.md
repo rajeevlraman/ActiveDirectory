@@ -3,6 +3,8 @@
 **Active Directory (AD)**
 
 Active Directory is a directory service developed by Microsoft for Windows domain networks.
+<img align="center" src="" /><br>
+picture Sourced from : https://www.conceptdraw.com/solution-park/computer-active-directory<br>
 
 ### Key Features:
 
@@ -36,8 +38,50 @@ Active Directory plays a crucial role in managing and securing resources within 
 
 <!--what is Active Directory -->
 <br>
+
+
+<!-- Hieraarchy of AD -->
+## Hierarchy of Domain Controllers in Active Directory
+
+### Active Directory (AD) uses a hierarchical model for distributing directory services and managing domain resources.
+
+### Components of the Hierarchy:
+
+1. **Forest:**
+   - A forest is the top-level container in Active Directory, consisting of one or more domains that share a common schema, configuration, and global catalog. Each forest has a unique Domain Name System (DNS) namespace.
+
+2. **Domains:**
+   - Domains are containers within a forest that define administrative and security boundaries. Each domain stores information about its objects (users, groups, computers) and has a unique Domain Security Identifier (SID).
+
+3. **Domain Controllers (DCs):**
+   - Domain Controllers are servers that host AD and respond to authentication and directory service requests within their domain. DCs store a writable copy of the directory database (NTDS.dit) and replicate changes to other DCs in the domain.
+
+4. **Site:**
+   - Sites are physical or logical groupings of subnets within an Active Directory forest. Sites help optimize replication traffic and facilitate efficient access to AD resources based on network topology.
+
+### Role and Responsibilities:
+
+- **Authentication:** DCs authenticate users and computers accessing resources within their domain.
+- **Directory Services:** DCs store and manage directory data, including user accounts, group policies, and security settings.
+- **Replication:** DCs replicate directory changes within their domain and across domains in the forest, ensuring data consistency.
+- **Operations Master Roles:** Some DCs hold operations master roles (FSMO roles) responsible for specific domain operations, such as schema updates or RID allocation.
+
+### Deployment Considerations:
+
+- **Redundancy:** Deploy multiple DCs per domain for fault tolerance and high availability.
+- **Topology Planning:** Design sites and subnets to optimize AD replication and access.
+- **Security:** Implement secure practices for managing DCs, including physical security, patch management, and monitoring.
+
+### Learn More:
+
+- [Microsoft Active Directory Documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services)
+
+Active Directory's hierarchical structure provides scalability, flexibility, and centralized management of network resources in Windows environments.
+<!-- Hieraarchy of AD -->
+
+
 ## Let's see how to Create a Active Directory Service on a Windows Server 2022<br><br>
-### I'll be using a Virtual machine created in Virtual Box.
+### I'll be using a Windows Server 2022 Virtual machine created in Virtual Box.
 
 - Steps to follow:
   
@@ -186,6 +230,7 @@ Active Directory plays a crucial role in managing and securing resources within 
 - DNS facilitates locating other domain controllers, domain-joined computers, and other domain resources.
 - Of course it can be tweaked according to requirements, but the integration of these services ensures the seamless functioning.
 -Now its a good practice to create a  `local Admin ` other than the built in Administrator.
-- You can create this Admin and contain user in a ` Organizational unit `.
-- You can view the process in detail this link [Create An Organizational Unit]( https://github.com/rajeevlraman/ActiveDirectory/blob/main/ad_ou.md)
+- You can create this Admin user and put the user in an ` Organizational unit `.
+- You can view the process in detail this link [Create An Organizational Unit]( https://github.com/rajeevlraman/ActiveDirectory/blob/main/ad_ou.md#OU)
+- You acan also view the creation of CA Certification Authority here [Create An CA - Certification Authority]( https://github.com/rajeevlraman/ActiveDirectory/blob/main/ad_ou.md)
 - After creating the user you can login with the new Administrator credentials.
