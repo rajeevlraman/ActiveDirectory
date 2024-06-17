@@ -43,18 +43,19 @@ Active Directory plays a crucial role in managing and securing resources within 
   
   - First Install a virtualization Platform, in this case i'm choosing Virtual Box
   - Download a Windows Server 2022 Evaluation copy from Microsoft Download Centre [ windows Server 2022 ](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
-  - Configure VM with minimum requirements due to limited resources.
+  - Configure VM with system requirements.
   - Set up two NICs:
+
   - One with NAT for external access.
  
 <img align="center" src="assets/images/Picture8.png" /><br>
 
-- Another with Host-only adapter for host-only access.
+  - Another with Host-only adapter for host-only access.
 
 <img align="center" src="assets/images/Picture9.png" /><br>
 
-  
-- VM traffic is routed through a pfSense firewall.
+- I have a Pfsense installed and will be using it as a Firewall and a DNS server.  
+- The VM traffic is routed through a pfSense firewall.
 - Start the VM and follow standard Windows installation instructions.
 
 <img align="center" src="assets/images/Picture10.png" /><br>
