@@ -162,10 +162,10 @@ the configurationo will be confirmed and you can view the detials by clicking on
 
 
 
-
+<a name="OU"></a>
 # 2. Creating an Organizational Unit (OU):<br>
 
-<a name="OU"></a>
+
 1. **Open Active Directory Users and Computers**:
    - Go to **Start Menu** → **Administrative Tools** → **Active Directory Users and Computers**.
 
