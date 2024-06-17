@@ -41,9 +41,9 @@ Active Directory plays a crucial role in managing and securing resources within 
 
 
 <!-- Hieraarchy of AD -->
-**Hierarchy of Domain Controllers in Active Directory**
+## Hierarchy of Domain Controllers in Active Directory
 
-Active Directory (AD) uses a hierarchical model for distributing directory services and managing domain resources.
+### Active Directory (AD) uses a hierarchical model for distributing directory services and managing domain resources.
 
 ### Components of the Hierarchy:
 
@@ -81,7 +81,7 @@ Active Directory's hierarchical structure provides scalability, flexibility, and
 
 
 ## Let's see how to Create a Active Directory Service on a Windows Server 2022<br><br>
-### I'll be using a Virtual machine created in Virtual Box.
+### I'll be using a Windows Server 2022 Virtual machine created in Virtual Box.
 
 - Steps to follow:
   
