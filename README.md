@@ -3,7 +3,7 @@
 **Active Directory (AD)**
 
 Active Directory is a directory service developed by Microsoft for Windows domain networks.
-<img align="center" src="assets/images/Computer-and-Networks-Active-Directory-Diagrams-Active-Directory-Structure-Diagram.png" /><br>
+<img align="center" src="" /><br>
 picture Sourced from : https://www.conceptdraw.com/solution-park/computer-active-directory<br>
 
 ### Key Features:
