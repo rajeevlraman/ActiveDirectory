@@ -1,19 +1,61 @@
 # ACTIVE DIRECTORY SETUP ON WINDOWS SERVER 2022
+<!--what is Active Directory -->
+**Active Directory (AD)**
+
+Active Directory is a directory service developed by Microsoft for Windows domain networks.
+
+### Key Features:
+
+- **Directory Service:** Stores information about objects on a network (e.g., users, computers, printers) and makes this information available to users and network administrators.
+- **Authentication and Authorization:** Manages user authentication and authorizes access to network resources based on security policies.
+- **Single Sign-On (SSO):** Allows users to log in once and gain access to multiple resources within the network.
+- **Group Policy Management:** Centralized management of user and computer settings across the network.
+- **DNS Integration:** Uses Domain Name System (DNS) to locate network resources and services.
+- **Security:** Provides security features such as encryption, secure authentication protocols (e.g., Kerberos), and access control.
+
+### Components:
+
+- **Domain Controllers:** Servers that manage AD database and authenticate users and computers.
+- **Domains:** Logical groupings of objects within AD, identified by a DNS name.
+- **Organizational Units (OUs):** Containers used to organize and manage objects within domains.
+- **Trust Relationships:** Establishes relationships between domains to share resources and enable access across different domains.
+
+### Use Cases:
+
+- **Enterprise Environments:** Provides centralized management of users, devices, and policies across large organizations.
+- **Authentication and Access Control:** Ensures secure access to resources based on organizational policies.
+- **Integration with Microsoft Ecosystem:** Seamlessly integrates with other Microsoft products and services.
+
+### Learn More:
+
+- [Microsoft Active Directory Overview](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services)
+- [Active Directory on Wikipedia](https://en.wikipedia.org/wiki/Active_Directory)
+
+Active Directory plays a crucial role in managing and securing resources within Windows-based networks, providing essential services for user management, authentication, and policy enforcement.
 
 
-- Create a Windows Server 2022 VM in VirtualBox.
-- Configure VM with minimum requirements due to limited resources.
-- Set up two NICs:
+<!--what is Active Directory -->
+<br>
+## Let's see how to Create a Active Directory Service on a Windows Server 2022<br><br>
+### I'll be using a Virtual machine created in Virtual Box.
+
+- Steps to follow:
+  
+  - First Install a virtualization Platform, in this case i'm choosing Virtual Box
+  - Download a Windows Server 2022 Evaluation copy from Microsoft Download Centre [ windows Server 2022 ](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
+  - Configure VM with system requirements.
+  - Set up two NICs:
+
   - One with NAT for external access.
  
 <img align="center" src="assets/images/Picture8.png" /><br>
 
-- Another with Host-only adapter for host-only access.
+  - Another with Host-only adapter for host-only access.
 
 <img align="center" src="assets/images/Picture9.png" /><br>
 
-  
-- VM traffic is routed through a pfSense firewall.
+- I have a Pfsense installed and will be using it as a Firewall and a DNS server.  
+- The VM traffic is routed through a pfSense firewall.
 - Start the VM and follow standard Windows installation instructions.
 
 <img align="center" src="assets/images/Picture10.png" /><br>
