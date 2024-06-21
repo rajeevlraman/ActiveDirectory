@@ -1,4 +1,4 @@
-# ACTIVE DIRECTORY SETUP ON WINDOWS SERVER 2022
+# ACTIVE DIRECTORY SETUP ON WINDOWS SERVER
 <!--what is Active Directory -->
 **Active Directory (AD)**
 
