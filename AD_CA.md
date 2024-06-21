@@ -184,7 +184,9 @@ the configurationo will be confirmed and you can view the detials by clicking on
    - Go to the **Security** tab to set permissions for who can manage objects within this OU.
    - I'll leave it empty.
 
-### Creating an Admin User in the OU:
+<a name="OU_user"></a><br>
+
+# 3. Creating an Admin User in the OU:
 
 <img align="center" src="assets/images_OU/Picture5.png" /><br>
 
