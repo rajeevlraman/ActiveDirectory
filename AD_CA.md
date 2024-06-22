@@ -1,5 +1,11 @@
 # ActiveDirectory
+## We can see how to create:
+- [CA- Certificate Authority](#CA)
+- [OU- Organizational Unit](#OU)
+- [User](#user)<br><br>
+
 <br> We wil see how to add a CA ` CERTIFICATE AUTHORITY ` role and a Local Admin group with a Admin user
+<a id="CA"></a>
 ## 1. Enabling Certificate Authority CA in Active Directory<br>
 
 <!--
@@ -159,9 +165,8 @@ https://www.toptal.com/designers/htmlarrows/symbols/script-capital-r/
 the configurationo will be confirmed and you can view the detials by clicking on the link provided.
 
 <img align="center" src="assets/images/Picture67.png" /><br>
-<a name="OU"></a><br>
 
-
+<a id="OU"></a>
 
 # 2. Creating an Organizational Unit (OU):<br>
 
@@ -184,7 +189,7 @@ the configurationo will be confirmed and you can view the detials by clicking on
    - Go to the **Security** tab to set permissions for who can manage objects within this OU.
    - I'll leave it empty.
 
-<a name="OU_user"></a><br>
+<a id="user"></a>
 
 # 3. Creating an Admin User in the OU:
 
