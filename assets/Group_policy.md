@@ -15,6 +15,8 @@ Group Policy is a feature of Windows Active Directory (AD) that allows IT admini
 1. Press `Win + R`, type `gpmc.msc`, and press `Enter` to open the Group Policy Management Console (GPMC).
 2. Alternatively, you can access GPMC via the **Start Menu** by navigating to **Administrative Tools** and selecting **Group Policy Management**.
 
+<img align="center" src="/assets/images_GP/Image1.jpg" /><br>
+
 ### Step 2: Create a New Group Policy Object (GPO)
 1. In the GPMC, expand your domain's node and right-click on the **Group Policy Objects** folder.
 2. Select **New** to create a new GPO.
