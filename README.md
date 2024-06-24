@@ -1,7 +1,7 @@
 # ACTIVE DIRECTORY SETUP ON WINDOWS SERVER
 <!--what is Active Directory -->
 **Active Directory (AD)**<br><br>
-[`CREATE AD`](#AD_create), [`CREATE CA`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md), [`CREATE OU`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md#OU), [`CREATE ADMIN`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md#user)<br><br>
+[`CREATE AD`](#AD_create), [`CREATE CA`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md), [`CREATE OU`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md#OU), [`CREATE ADMIN`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md#user), [CREATE GP](https://github.com/rajeevlraman/ActiveDirectory/blob/main/assets/Group_policy.md)<br><br>
 Active Directory is a directory service developed by Microsoft for Windows domain networks.
 <img align="center" src="" /><br>
 picture Sourced from : https://www.conceptdraw.com/solution-park/computer-active-directory<br>
