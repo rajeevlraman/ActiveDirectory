@@ -82,7 +82,7 @@ Adding Certificate Authority (CA) roles in Active Directory is crucial for estab
 - since I have only one domain it will be displayed so select it.
 - In the Server Roles select &#x2611; Active Directory Certificate Services
 
-<img align="center" src="assets/images/Picture48.png" /><br> 
+<br><img align="center" src="assets/images/Picture48.png" /><br> 
 <!-- to add check box
 - [ ] Task 1
 - [x] Task 2 (completed)
