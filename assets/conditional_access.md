@@ -61,13 +61,13 @@ This policy ensures that only devices that comply with your organization's secur
 3. In the left-hand menu, select **Security**.
 4. Click on **Conditional Access**.
 
-<br><img align="center" src="assets/images_CA/Picture1.png" /><br>
+<br><img align="center" src="/assets/images_CA/Picture1.png" /><br>
 
 ### Step 2: Create a New Policy
 1. In the **Conditional Access** section, click on **New policy**.
 2. Name the policy, e.g., "Require Compliant Devices for Email Access".
 
-<br><img align="center" src="assets/images_CA/Picture2.png" /><br>
+<br><img align="center" src="/assets/images_CA/Picture2.png" /><br>
 
 ### Step 3: Configure Assignments
 1. **Users and Groups**:
@@ -75,13 +75,14 @@ This policy ensures that only devices that comply with your organization's secur
    - Choose **All users** or select specific groups (e.g., employees).
    - Click **Select** to confirm.
 
-<br><img align="center" src="assets/images_CA/Picture3.png" /><br>
+<br><img align="center" src="/assets/images_CA/Picture3.png" /><br>
 
 2. **Cloud Apps or Actions**:
    - Click on **Cloud apps or actions**.
    - Select **Include** > **Select apps**.
    - Search for and choose the email services (e.g., **Office 365 Exchange Online**).
    - Click **Select** to confirm.
+<br><img align="center" src="/assets/images_CA/Picture4.png" /><br>
 
 3. **Conditions**:
    - Expand the **Device state** condition.
@@ -90,8 +91,8 @@ This policy ensures that only devices that comply with your organization's secur
    - Under **Exclude**, select **Compliant** to exclude compliant devices from further controls (since we only want non-compliant devices to be blocked or restricted).
    - Click **Done**.
 
-<br><img align="center" src="assets/images_CA/Picture4.png" /><br>
-<br><img align="center" src="assets/images_CA/Picture5.png" /><br>
+<br><img align="center" src="/assets/images_CA/Picture4.png" /><br>
+<br><img align="center" src="/assets/images_CA/Picture5.png" /><br>
 
 
 ### Step 4: Configure Access Controls
@@ -100,7 +101,7 @@ This policy ensures that only devices that comply with your organization's secur
    - Select **Require device to be marked as compliant**.
    - Click **Select** to confirm.
 
-<br><img align="center" src="assets/images_CA/Picture6.png" /><br>
+<br><img align="center" src="/assets/images_CA/Picture6.png" /><br>
 
 
 ### Step 5: Review and Save the Policy
@@ -108,15 +109,15 @@ This policy ensures that only devices that comply with your organization's secur
 2. Set the policy to **Report-only** mode initially to monitor its impact without enforcing it.
 3. Click **Create** to save and activate the policy.
 
-<br><img align="center" src="assets/images_CA/Picture7.png" /><br>
+<br><img align="center" src="/assets/images_CA/Picture7.png" /><br>
 
 ### Step 5: Review and Enforce the Policy
 1. Review all the configured settings.
 2. Set the policy to **on** mode once the policy meets all the requirements.
 3. Click **Create** to save and enforce the policy.
 
-<br><img align="center" src="assets/images_CA/Picture8.png" /><br>
-<br><img align="center" src="assets/images_CA/Picture9.png" /><br>
+<br><img align="center" src="/assets/images_CA/Picture8.png" /><br>
+<br><img align="center" src="/assets/images_CA/Picture9.png" /><br>
 
 ![Conditional Access Policy - Compliant Devices](https://via.placeholder.com/800x400.png?text=Conditional+Access+Policy+-+Compliant+Devices)
 
