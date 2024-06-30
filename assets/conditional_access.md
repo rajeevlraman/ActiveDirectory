@@ -175,7 +175,7 @@ This policy blocks access to organizational resources from locations that are de
 ## Summary
 These policies blocks access to your organizational resources from high-risk locations, enhancing security by preventing unauthorized access from these areas.
 
-![Conditional Access Policy - Block Risky Locations](https://via.placeholder.com/800x400.png?text=Conditional+Access+Policy+-+Block+Risky+Locations)
+![Conditional Access Policy - Block Risky Locations](<img align="center" src="/assets/images_CA/cond_access.png" />)
 
 ---
 
