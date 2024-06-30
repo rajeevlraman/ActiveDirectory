@@ -1,9 +1,9 @@
 # ACTIVE DIRECTORY SETUP ON WINDOWS SERVER
 <!--what is Active Directory -->
-**Active Directory (AD)**
-
+**Active Directory (AD)**<br><br>
+[`MAIN PAGE`](https://github.com/rajeevlraman), [`CREATE AD`](#AD_create), [`CREATE CA`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md), [`CREATE OU`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md#OU), [`CREATE ADMIN`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md#user), [`CREATE GP`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/assets/Group_policy.md)<br><br>
 Active Directory is a directory service developed by Microsoft for Windows domain networks.
-<img align="center" src="" /><br>
+<img align="center" src="assets/images/Active-directory1.png" /><br>
 picture Sourced from : https://www.conceptdraw.com/solution-park/computer-active-directory<br>
 
 ### Key Features:
@@ -231,7 +231,7 @@ Active Directory's hierarchical structure provides scalability, flexibility, and
 - DNS facilitates locating other domain controllers, domain-joined computers, and other domain resources.
 - Of course it can be tweaked according to requirements, but the integration of these services ensures the seamless functioning.
 -Now its a good practice to create a  `local Admin ` other than the built in Administrator.
-- You can create this Admin user and put the user in an ` Organizational unit `.
 - You can view the process in detail this link [Create An Organizational Unit](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md#OU)
+- You can create this [`Admin user`](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md#OU_user) and put the user in an ` Organizational unit `.
 - You acan also view the creation of CA Certification Authority here [Create An CA - Certification Authority](https://github.com/rajeevlraman/ActiveDirectory/blob/main/AD_CA.md)
 - After creating the user you can login with the new Administrator credentials.
