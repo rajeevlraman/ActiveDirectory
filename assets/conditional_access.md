@@ -93,6 +93,7 @@ This policy ensures that only devices that comply with your organization's secur
 <br><img align="center" src="assets/images_CA/Picture4.png" /><br>
 <br><img align="center" src="assets/images_CA/Picture5.png" /><br>
 
+
 ### Step 4: Configure Access Controls
 1. **Grant**:
    - Click on **Grant**.
