@@ -119,7 +119,8 @@ This policy ensures that only devices that comply with your organization's secur
 <br><img align="center" src="/assets/images_CA/Picture8.png" /><br>
 <br><img align="center" src="/assets/images_CA/Picture9.png" /><br>
 
-![Conditional Access Policy - Compliant Devices](https://via.placeholder.com/800x400.png?text=Conditional+Access+Policy+-+Compliant+Devices)
+![Conditional Access Policy - Compliant Devices](/assets/images_CA/cond_access.png)
+source Microsoft guide : https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview
 
 ---
 
