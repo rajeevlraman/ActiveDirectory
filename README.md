@@ -34,7 +34,7 @@ picture Sourced from : https://www.conceptdraw.com/solution-park/computer-active
 - [Active Directory on Wikipedia](https://en.wikipedia.org/wiki/Active_Directory)
 
 Active Directory plays a crucial role in managing and securing resources within Windows-based networks, providing essential services for user management, authentication, and policy enforcement.
-
+***In the earlier version called as Primary Domain Controller (PDC)***
 
 <!--what is Active Directory -->
 <br>
