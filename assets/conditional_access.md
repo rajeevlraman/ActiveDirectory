@@ -1,4 +1,4 @@
-# Conditional Access in Windows Active Directory    [`Home`](https://github.com/rajeevlraman)<br>
+# Conditional Access in Windows and Azure (Entra) Active Directory    [`Home`](https://github.com/rajeevlraman)<br>
 
 ## Overview
 Conditional Access is a feature in Windows Active Directory (AD) and Azure Active Directory (Azure AD) that enhances security by enforcing policies that control how and when users can access resources. It evaluates various conditions and applies specific controls to manage user access, providing a dynamic and adaptive approach to security.
